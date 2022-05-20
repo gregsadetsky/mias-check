@@ -2,7 +2,7 @@ import re
 from pathlib import Path
 
 PARENT_DIR = Path(__file__).resolve().parent
-MIASDB_TRUTH_FILE = PARENT_DIR / "0.miasdb_malignant.txt"
+MIASDB_TRUTH_FILE = PARENT_DIR / "0.miasdb.txt"
 PREDICTIONS_FILE = PARENT_DIR / "3.output.csv"
 
 known_malignant_ids = []
