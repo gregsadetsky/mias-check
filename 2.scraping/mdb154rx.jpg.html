@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Hao Jiang" content="NeuralRad">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+  </head>
+  <body>
+    <section class="hero is-white">
+      <nav class="nav">
+        <div class="nav-left">
+          <a href="/" class="nav-item">
+            <h6 class="subtitle">
+              <strong>NeuralRad</strong>
+            </h6>
+          </a>
+        </div>
+        <div class="nav-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a href="/logout" class="button is-primary is-outlined">
+                <span>Logout</span>
+              </a>
+            </p>
+            <p class="control">
+              <a href="/settings" class="button is-primary is-outlined">
+                <span id="cog" class="icon">
+                  <i class="fa fa fa-cog"></i>
+                </span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </nav>
+    </section>
+    
+<section class="hero is-primary is-bold is-large">
+  <!-- <div class="hero-body"></div> -->
+	<title>Analyzing Mammogram</title>
+	<h1>Upload Mammogram Image File (jpg)</h1>
+	<form action="" method=post enctype=multipart/form-data>
+	  <p><input type=file name=file>
+	     <input type=submit value=Analyze>
+	</form>
+	<h1> <font color='yellow'>We will not store your data on our server. Please don't worry about any privacy issues. Thank you!</font></h1>
+	<h1> <font color='yellow'>This tool is only to provide you with the awareness of breast mammogram, not for diagnosis. </font></h1>
+        <h1> <font color='red'>This tool is not FDA approved and please do not use it for any diagnostic purposes. </font></h1>
+	<!-- <p>%s</p> -->
+</section>
+
+<p><font color="red">The following results are not diagnosis, please consult your physicians for any diagnostic information.</font></p><p>No mass found</p>
+
+<img src="./static/results_mdb154rx.jpg" alt="file name" width=600>
+<!-- <p> -->
+<!-- <img src="" alt="file name" width=600> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../static/js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Hao Jiang" content="NeuralRad">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+  </head>
+  <body>
+    <section class="hero is-white">
+      <nav class="nav">
+        <div class="nav-left">
+          <a href="/" class="nav-item">
+            <h6 class="subtitle">
+              <strong>NeuralRad</strong>
+            </h6>
+          </a>
+        </div>
+        <div class="nav-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a href="/logout" class="button is-primary is-outlined">
+                <span>Logout</span>
+              </a>
+            </p>
+            <p class="control">
+              <a href="/settings" class="button is-primary is-outlined">
+                <span id="cog" class="icon">
+                  <i class="fa fa fa-cog"></i>
+                </span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </nav>
+    </section>
+    
+<section class="hero is-primary is-bold is-large">
+  <!-- <div class="hero-body"></div> -->
+	<title>Analyzing Mammogram</title>
+	<h1>Upload Mammogram Image File (jpg)</h1>
+	<form action="" method=post enctype=multipart/form-data>
+	  <p><input type=file name=file>
+	     <input type=submit value=Analyze>
+	</form>
+	<h1> <font color='yellow'>We will not store your data on our server. Please don't worry about any privacy issues. Thank you!</font></h1>
+	<h1> <font color='yellow'>This tool is only to provide you with the awareness of breast mammogram, not for diagnosis. </font></h1>
+        <h1> <font color='red'>This tool is not FDA approved and please do not use it for any diagnostic purposes. </font></h1>
+	<!-- <p>%s</p> -->
+</section>
+
+<p><font color="red">The following results are not diagnosis, please consult your physicians for any diagnostic information.</font></p><p>1. Model prediction of possible <font color="red">malignant mass</font> with possibility at      56.23% --- location at box index: [ 493.20822 1152.9736   975.3229  1649.128  ]</p><p>2. Model prediction of possible <font color="red">malignant mass</font> with possibility at      50.19% --- location at box index: [1860.4962 1323.2893 2033.5436 1482.5333]</p><p>3. Model prediction of possible <font color="red">malignant mass</font> with possibility at      41.04% --- location at box index: [ 500.34976 1255.065    889.1487  1560.9713 ]</p><p> --------- The above masses are plotted on the image ------------- </p><p>4. Model prediction of possible <font color="blue">benign mass</font> with possibility at      38.95% --- location at box index: [1857.7411 1339.6414 2016.9634 1485.6298]</p><p>5. Model prediction of possible <font color="blue">benign mass</font> with possibility at      37.82% --- location at box index: [ 510.82965 1240.4218   902.9846  1571.5092 ]</p><p>6. Model prediction of possible <font color="blue">benign mass</font> with possibility at      18.86% --- location at box index: [ 478.75937 1149.4716   986.86743 1661.1523 ]</p><p>7. Model prediction of possible <font color="red">malignant mass</font> with possibility at      17.65% --- location at box index: [ 333.11346 1163.255   1020.43384 1866.0591 ]</p><p>8. Model prediction of possible <font color="red">malignant mass</font> with possibility at      16.57% --- location at box index: [1829.0759 1277.1105 2073.3896 1516.5554]</p><p>9. Model prediction of possible <font color="red">malignant mass</font> with possibility at      15.87% --- location at box index: [ 539.029   1309.8075   822.61633 1517.8658 ]</p><p>10. Model prediction of possible <font color="blue">benign mass</font> with possibility at      12.66% --- location at box index: [ 561.4618  1291.1051   834.98346 1519.2227 ]</p><p>11. Model prediction of possible <font color="red">malignant calcification</font> with possibility at      10.46% --- location at box index: [1856.9774 1311.6249 2040.2302 1483.1566]</p><p>12. Model prediction of possible <font color="red">malignant mass</font> with possibility at      10.17% --- location at box index: [1882.9772 1359.9348 1993.7164 1480.3527]</p>
+
+<img src="./static/results_mdb005ll.jpg" alt="file name" width=600>
+<!-- <p> -->
+<!-- <img src="" alt="file name" width=600> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../static/js/scripts.js"></script>
+  </body>
+</html>
