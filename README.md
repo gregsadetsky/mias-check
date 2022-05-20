@@ -40,3 +40,7 @@ python3 4.validate_results.py
 
 - compare position of masses (truth vs prediction)
 - take return prediction 'possibility' into account
+
+## credits
+
+`0.miasdb_malignant.txt` file from [here](https://www.kaggle.com/datasets/kmader/mias-mammography).
