@@ -15,7 +15,8 @@ total 322
 ## see analyzed / scraped data
 
 - html results returned for all images are under the `_scraping` directory
-- the tool's "analyzed" results are in `3.output.csv` (true/false value meaning "is the word malignant present on the result page")
+- the tool's "analyzed" results are in `3.output.csv`
+  - `True`/`False` values boil down to "is the word malignant present on the result page"
 
 ## how to run it / reproduce it
 
@@ -26,7 +27,10 @@ cd 0.data
 ./download.sh
 ```
 
-- pip install beautifulsoup and requests if missing
+- convert all .pgm images to .jpg format (sorry, I forgot to automate this)
+  - on osx, you can run `sips --setProperty format jpeg --setProperty formatOptions 100 .../path/.../MIASDBv1.21/*.pgm`
+  - after running `sips`, you annoyingly must rename the (not anymore, but still named)-.pgm files to have .jpg extensions
+- pip install beautifulsoup and requests if missing -- `pip3 install beautifulsoup4 requests`
 - run:
 
 ```
