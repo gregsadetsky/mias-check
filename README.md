@@ -1,6 +1,6 @@
 # what is this
 
-an extremely informal test of the tool described [here](https://news.ycombinator.com/item?id=31449147)
+an extremely informal test of the mammogram analysis tool described [here](https://news.ycombinator.com/item?id=31449147)
 
 ## results
 
@@ -14,9 +14,8 @@ total 322
 
 ## see analyzed / scraped data
 
-- the tool's html results are under the `_scraping` directory
-- the tool's "analyzed" results are in `3.output.csv`
--- it boils down to "is the word malignant present on the output page"
+- html results returned for all images are under the `_scraping` directory
+- the tool's "analyzed" results are in `3.output.csv` (true/false value meaning "is the word malignant present on the result page")
 
 ## how to run it / reproduce it
 
@@ -43,4 +42,4 @@ python3 4.validate_results.py
 
 ## credits
 
-`0.miasdb_malignant.txt` file from [here](https://www.kaggle.com/datasets/kmader/mias-mammography).
+- Suckling, J., Parker, J., Dance, D., Astley, S., Hutt, I., Boggis, C., Ricketts, I., et al. (2015). Mammographic Image Analysis Society (MIAS) database v1.21 \[Dataset\]. https://www.repository.cam.ac.uk/handle/1810/250394
